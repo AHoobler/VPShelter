@@ -31,8 +31,10 @@ namespace VPShelter
 
         public void WaterPet()
         {
-            Console.WriteLine("You gav the pet water.");
+            Console.WriteLine("You gave the pet water.");
         }
+
+
 
         public override void ClockIn()
         {

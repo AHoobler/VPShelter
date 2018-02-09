@@ -31,5 +31,10 @@ namespace VPShelter
         {
             Console.WriteLine("You have clocked out for the day");
         }
+
+        public virtual void Play()
+        {
+            Console.WriteLine("You took the pets for a walk!");
+        }
     }
 }

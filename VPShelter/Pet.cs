@@ -27,5 +27,6 @@ namespace VPShelter
             this.pDiet = pDiet;
             this.pType = pType;
         }
+
     }
 }
