@@ -61,7 +61,7 @@ namespace VPShelter
         // NEW CONSTRUCTORS
         public VirtualPet()
         {
-            //
+            // defualt 
         }
          
         public VirtualPet(string name, string description)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VPShelter
 {
-    abstract class Employee
+    public abstract class Employee
     {
         //field
         private int employeeID;
