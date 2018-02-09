@@ -22,14 +22,14 @@ namespace VPShelter
         // no constructor in abstract class
 
         // two abstract methods
-       public virtual void FeedPet()
+       public virtual void ClockIn()
         {
-            Console.WriteLine("You fed the pet");
+            Console.WriteLine("You have clocked in for the day");
         }
 
-        public virtual void WaterPet()
+        public virtual void ClockOut()
         {
-            Console.WriteLine("You gave the pet water");
+            Console.WriteLine("You have clocked out for the day");
         }
     }
 }

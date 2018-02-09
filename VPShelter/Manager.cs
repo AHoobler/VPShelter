@@ -29,9 +29,9 @@ namespace VPShelter
             Console.WriteLine("You found a home for the pet!");
         }
 
-        public override void FeedPet()
+        public override void ClockIn()
         {
-            Console.WriteLine("You got paid to feed the pet!");
+            Console.WriteLine("You have clocked in as manager.");
         }
 
 
