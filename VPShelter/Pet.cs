@@ -8,13 +8,13 @@ namespace VPShelter
 {
     public class Pet : VirtualPet
     {
-        private string pType;
-        private string pDiet;
+        private string petType;
+        private string dogDiet;
 
         public string PDiet //UPPERCASE
         {
-            get { return this.pDiet; }
-            set { this.pDiet = value; }
+            get { return this.dogDiet; }
+            set { this.dogDiet = value; }
         }
 
         public Pet()
@@ -24,8 +24,8 @@ namespace VPShelter
 
         public Pet(string pType, string pDiet)
         {
-            this.pDiet = pDiet;
-            this.pType = pType;
+            this.dogDiet = pDiet;
+            this.petType = pType;
         }
 
     }

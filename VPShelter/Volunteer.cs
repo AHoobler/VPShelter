@@ -26,12 +26,16 @@ namespace VPShelter
 
         public void FeedPet()
         {
-            Console.WriteLine("You have fed the pet.");
+            Console.WriteLine();
+            Console.WriteLine("You have fed all of the pets.");
+            Console.WriteLine();
         }
 
         public void WaterPet()
         {
-            Console.WriteLine("You gave the pet water.");
+            Console.WriteLine();
+            Console.WriteLine("You gave all of the pets water.");
+            Console.WriteLine();
         }
 
 

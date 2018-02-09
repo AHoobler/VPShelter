@@ -71,7 +71,7 @@ namespace VPShelter
         }
 
         // Add angry??
-        public VirtualPet(int isBored, int isHungry, int isThirsty)
+        public VirtualPet(string name, string descrition, int isBored, int isHungry, int isThirsty)
         {
             this.isBored = isBored;
             this.isHungry = isHungry;

@@ -8,6 +8,7 @@ namespace VPShelter
 {
     public class Manager : Employee
     {
+        string petAdopt;
         //field
         private float salary;
 
@@ -26,11 +27,22 @@ namespace VPShelter
         //adopt method
         public void Adopt()
         {
-            Console.WriteLine("You found a home for the pet!");
+            Console.WriteLine();
+            Console.WriteLine("Which pet would you like to find a home for?");
+            Console.WriteLine("Sirius \n Crookshanks \n Trevor \n Hedwig");
+            petAdopt = Console.ReadLine().ToLower();
+
+            if (petAdopt == "sirius") ;
+            {
+
+            }
+
+
         }
 
         public override void ClockIn()
         {
+            Console.WriteLine();
             Console.WriteLine("You have clocked in as manager.");
         }
 
