@@ -36,22 +36,22 @@ namespace VPShelter
             switch (petAdopt)
             {
                 case "sirius":            
-                 Console.WriteLine("You found Sirius a home!");
+                 Console.WriteLine("An old man named Albus adopted Sirius!");
                     Console.WriteLine();
                     return;
 
                 case "crookshanks":
-                   Console.WriteLine("You found Crookshanks a home!");
+                   Console.WriteLine("A girl named Hermione adopted Crookshanks!");
                     Console.WriteLine();
                     return;
 
                 case "trevor":
-                    Console.WriteLine("You found Trevor a home!");
+                    Console.WriteLine("A boy named Neville adopted Trevor!");
                     Console.WriteLine();
                     return;
 
                 case "hedwig":
-                    Console.WriteLine("You found a home for Hedwig");
+                    Console.WriteLine("A boy named Harry adopted Hedwig!");
                     Console.WriteLine();
                     return;
             }

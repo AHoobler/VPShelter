@@ -70,9 +70,11 @@ namespace VPShelter
             this.name = name;
         }
 
-        // Add angry??
+        
         public VirtualPet(string name, string description, int isBored, int isHungry, int isThirsty)
         {
+            this.name = name;
+            this.description = description;
             this.isBored = isBored;
             this.isHungry = isHungry;
             this.isThirsty = isThirsty;
