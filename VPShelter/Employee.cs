@@ -44,6 +44,7 @@ namespace VPShelter
             switch (petPlay)
             {
                 case "sirius":
+                    
                     Console.WriteLine("You took Sirius for a walk!");
                     Console.WriteLine("He tried to escape from you multiple times!");
                     Console.WriteLine();

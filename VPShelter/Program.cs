@@ -15,10 +15,10 @@ namespace VPShelter
 
             Volunteer newVolunteer = new Volunteer();
             Manager newManager = new Manager();
-            VirtualPet newDog = new VirtualPet("Sirius", "Black dog who has human like intelligence.",12,15,10);
-            VirtualPet newCat = new VirtualPet("Crookshanks", "Orange Cat who hates rats.",10,4,3);
-            VirtualPet newToad = new VirtualPet("Trevor", "Green toad who often gets lost.",7,9,10);
-            VirtualPet newOwl = new VirtualPet("Hedwig", "White owl who really likes mail.",5,13,7);
+            VirtualPet newDog = new VirtualPet("Sirius", "Black dog who has human like intelligence.",25,22,20);
+            VirtualPet newCat = new VirtualPet("Crookshanks", "Orange Cat who hates rats.",50,40,92);
+            VirtualPet newToad = new VirtualPet("Trevor", "Green toad who often gets lost.",20,46,76);
+            VirtualPet newOwl = new VirtualPet("Hedwig", "White owl who really likes mail.",55,83,67);
 
             //newCat.Name = "Crookshanks ";
             //newDog.Name = "Sirius ";
@@ -54,6 +54,13 @@ namespace VPShelter
                             Console.WriteLine("Thank you for volunteering!");
                             do
                             {
+
+                                Console.WriteLine("Current pet values");
+                                Console.WriteLine("| Name        | Hunger | Thirst   | Boredom |");
+                                Console.WriteLine("| Sirius      | " + newDog.IsHungry + "     | " +  newDog.IsThirsty + "       | " + newDog.IsBored + "      | " );
+                                Console.WriteLine("| CrookShanks | " + newCat.IsHungry + "     | " + newCat.IsThirsty + "       | " + newCat.IsBored + "      | ");
+                                Console.WriteLine("| Trevor      | " + newToad.IsHungry + "     | " + newToad.IsThirsty + "       | " + newToad.IsBored+ "      | " );
+                                Console.WriteLine("| Hedwig      | " + newOwl.IsHungry + "     | " + newOwl.IsThirsty + "       | " + newOwl.IsBored + "      | ") ;
                                 Console.WriteLine();
                                 Console.WriteLine("What volunteer task would you like to complete?");
                                 Console.WriteLine("Enter 'play' to play with the pets.");
@@ -62,18 +69,28 @@ namespace VPShelter
                                 Console.WriteLine("Enter 'leave' to clock out.");
                                 Console.WriteLine();
 
+
                                 userInput = Console.ReadLine().ToLower();
 
                                 if (userInput == "play")
                                 {
+                                    
                                     newVolunteer.Play();
                                 }
                                 if (userInput == "feed")
                                 {
+                                    newCat.IsHungry--;
+                                    newDog.IsHungry--;
+                                    newOwl.IsHungry--;
+                                    newToad.IsHungry--;
                                     newVolunteer.FeedPet();
                                 }
                                 if (userInput == "water")
                                 {
+                                    newCat.IsThirsty--;
+                                    newDog.IsThirsty--;
+                                    newOwl.IsThirsty--;
+                                    newToad.IsThirsty--;
                                     newVolunteer.WaterPet();
                                 }
 
