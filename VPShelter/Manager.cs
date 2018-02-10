@@ -50,7 +50,7 @@ namespace VPShelter
                     Console.WriteLine();
                     return;
 
-                case "Hedwig":
+                case "hedwig":
                     Console.WriteLine("You found a home for Hedwig");
                     Console.WriteLine();
                     return;

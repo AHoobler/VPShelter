@@ -20,13 +20,21 @@ namespace VPShelter
             VirtualPet newToad = new VirtualPet("Trevor", "Green toad, often gets lost.",7,9,10);
             VirtualPet newOwl = new VirtualPet("Hedwig", "White owl, really likes mail.",5,13,7);
 
+            newCat.Name = "Crookshanks ";
+            newDog.Name = "Sirius ";
+            newOwl.Name = "Hedwig ";
+            newToad.Name = "Trevor ";
+            newCat.Description = " Orange cat who hates rats.";
+            newDog.Description = " Black dog with human like intelligence.";
+            newToad.Description = " Green toad who gets lost easily.";
+            newOwl.Description = " White owl who really like mail.";
+
+
             Console.WriteLine("Welcome to the virtual pet shelter!");
             Console.WriteLine();
             
 
             //menu
-            
-            
 
                 Console.WriteLine("Please select an option from the following:");
                 Console.WriteLine("Press 1 to clock in as volunteer.");
@@ -83,7 +91,7 @@ namespace VPShelter
                             {
                                 Console.WriteLine("What manager task would you like to complete?");
                                 Console.WriteLine("Enter 'adopt' to set up and adoption.");
-                                Console.WriteLine("Enter 'Play' to take the pets on a walk.");
+                                Console.WriteLine("Enter 'play' to take the pets on a walk.");
                                 Console.WriteLine("Enter 'leave' to clock out.");
                                 Console.WriteLine();
 
@@ -91,6 +99,13 @@ namespace VPShelter
                                 
                                 if (userInput == "adopt" )
                                 {
+                                    Console.WriteLine();
+                                    Console.WriteLine("Here are the pets available for adoption.");
+                                    Console.WriteLine(newDog.Name + "is a" + newDog.Description);
+                                    Console.WriteLine(newCat.Name + "is a" + newCat.Description);
+                                    Console.WriteLine(newOwl.Name + "is a" + newOwl.Description);
+                                    Console.WriteLine(newToad.Name + "is a" + newToad.Description);
+                                    Console.WriteLine();
                                     newManager.Adopt();
                                 }
                                 if (userInput == "play")

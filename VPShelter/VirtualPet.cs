@@ -23,7 +23,7 @@ namespace VPShelter
             set { this.name = value; }
         }
 
-        public string Desciption
+        public string Description
         {
             get { return this.description; }
             set { this.description = value; }
@@ -71,7 +71,7 @@ namespace VPShelter
         }
 
         // Add angry??
-        public VirtualPet(string name, string descrition, int isBored, int isHungry, int isThirsty)
+        public VirtualPet(string name, string description, int isBored, int isHungry, int isThirsty)
         {
             this.isBored = isBored;
             this.isHungry = isHungry;
