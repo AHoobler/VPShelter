@@ -73,7 +73,7 @@ namespace VPShelter
                     if (readLet == "yes")
                     {
                         Console.WriteLine();
-                        Console.WriteLine("Harry, \n I'm trapped in a cage with a strange man. Please send help! \n -padfoot.");
+                        Console.WriteLine("Harry,\n\n I'm trapped in a cage in a cold place called 'Ohio'. Please send help! \n\n -Padfoot.");
                         Console.WriteLine();
                         Console.WriteLine("What a strange letter. I wonder what it means.");
                         Console.WriteLine();
