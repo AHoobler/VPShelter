@@ -34,6 +34,8 @@ namespace VPShelter
             Console.WriteLine("You have clocked out for the day");
         }
 
+
+        //method to play with individual pets
         public virtual void Play()
         {
             Console.WriteLine("Which pet would you like to play with?");
