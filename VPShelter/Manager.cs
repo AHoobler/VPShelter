@@ -9,6 +9,7 @@ namespace VPShelter
     public class Manager : Employee
     {
         string petAdopt;
+
         //field
         private float salary;
 
@@ -18,7 +19,7 @@ namespace VPShelter
             get { return this.salary; }
         }
 
-        //constructor??
+        //constructor
         public Manager()
         {
             //default 
@@ -58,6 +59,7 @@ namespace VPShelter
             
         }
 
+        //override method
         public override void ClockIn()
         {
             Console.WriteLine();

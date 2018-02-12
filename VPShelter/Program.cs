@@ -20,6 +20,7 @@ namespace VPShelter
             VirtualPet newToad = new VirtualPet("Trevor", "Green toad who often gets lost.",20,46,76);
             VirtualPet newOwl = new VirtualPet("Hedwig", "White owl who really likes mail.",55,83,67);
 
+            // fixed
             //newCat.Name = "Crookshanks ";
             //newDog.Name = "Sirius ";
             //newOwl.Name = "Hedwig ";
@@ -34,7 +35,7 @@ namespace VPShelter
             Console.WriteLine();
             
 
-            //menu
+            // main menu
 
                 Console.WriteLine("Please select an option from the following:");
                 Console.WriteLine("Press 1 to clock in as volunteer.");
@@ -54,7 +55,7 @@ namespace VPShelter
                             Console.WriteLine("Thank you for volunteering!");
                             do
                             {
-
+                                //volunteer menu
                                 Console.WriteLine("Current pet values");
                                 Console.WriteLine("| Name        | Hunger | Thirst   | Boredom |");
                                 Console.WriteLine("| Sirius      | " + newDog.IsHungry + "     | " +  newDog.IsThirsty + "       | " + newDog.IsBored + "      | " );
@@ -105,7 +106,7 @@ namespace VPShelter
                             Console.WriteLine();
 
                             do
-                            {
+                            {   //manager menu
                                 Console.WriteLine("What manager task would you like to complete?");
                                 Console.WriteLine("Enter 'adopt' to set up and adoption.");
                                 Console.WriteLine("Enter 'play' to play with the pets.");
@@ -114,6 +115,7 @@ namespace VPShelter
 
                                 userInput = Console.ReadLine().ToLower();
                                 
+                                // pet name and descriptions
                                 if (userInput == "adopt" )
                                 {
                                     Console.WriteLine();

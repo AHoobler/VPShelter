@@ -24,6 +24,7 @@ namespace VPShelter
             //default
         }
 
+        //method to feed pets
         public void FeedPet()
         {
             Console.WriteLine();
@@ -31,6 +32,7 @@ namespace VPShelter
             Console.WriteLine();
         }
 
+        //method to water pets
         public void WaterPet()
         {
             Console.WriteLine();
@@ -39,7 +41,7 @@ namespace VPShelter
         }
 
 
-
+        //override
         public override void ClockIn()
         {
             Console.WriteLine("You have clocked in as a volunteer.");

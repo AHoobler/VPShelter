@@ -64,13 +64,16 @@ namespace VPShelter
             // defualt 
         }
          
+
+        //name and description only
         public VirtualPet(string name, string description)
         {
             this.description = description;
             this.name = name;
         }
 
-        
+        //name description and attributes
+
         public VirtualPet(string name, string description, int isBored, int isHungry, int isThirsty)
         {
             this.name = name;
